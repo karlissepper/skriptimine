@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#Tervitus skrip kus kasutaja on sisselogitud kasutaja
+
+echo "Tere, `whoami` !"
