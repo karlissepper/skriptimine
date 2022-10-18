@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Skript väljastab kasutajale tervitust “Tere, user !”
+
+echo "Tere, $USER !"
+
