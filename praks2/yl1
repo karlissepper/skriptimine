@@ -2,5 +2,5 @@
 
 # Skript väljastab kasutajale tervitust “Tere, user !”
 
-echo "Tere, $USER !"
+echo "Tere, `whoami` !"
 
