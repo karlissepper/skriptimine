@@ -1,5 +1,16 @@
 #!/bin/bash
 
-#Tervitus skrip kus kasutaja on sisselogitud kasutaja
+#Skript väljastab kuupäeva ja kellaaja
 
-echo "Tere, `whoami` !"
+paev=`date +"%A"`
+kuu=`date +"%B"`
+paevnr=`date +"%d"`
+aasta=`date +"%Y"`
+kellaaeg=`date +"%R"`
+echo ""
+echo "Today is $paev, $kuu $paevnr, $aasta"
+echo ""
+echo "Time is $kellaaeg"
+echo ""
+echo -n "Calender of"
+cal
