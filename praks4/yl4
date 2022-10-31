@@ -1,0 +1,18 @@
+#!/bin/bash
+#Ütleb kas arv on paaris või paaritu
+
+#Kõigepealt kontrollib kas on käivitamisel sisestatud arv.
+if [ $# -ne 0 ]
+then 
+#kui on siis käivitatakse programm.
+	arv=$(($1%2))
+	if [ $arv -eq 0 ]
+	then
+	echo "Antud arv on paaris"
+	else
+	echo "Antud arv on paaritu"
+	fi
+else
+#Kui ei ole siis tagastab sõne selgitusega.
+echo "Kaivita see skrip koos arvuga mille paarsust soovid kontrollida. Näiteks ./yl4 3"
+fi
