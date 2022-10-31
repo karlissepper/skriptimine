@@ -1,5 +1,5 @@
 #!/bin/bash
-#
+#Tagastab tervituse saadud aja kohta
 echo -n "Sisesta aja väärtus:"
 read aeg
 #Kui aeg on 6 ja 12 vahel
