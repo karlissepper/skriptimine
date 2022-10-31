@@ -1,0 +1,24 @@
+#!/bin/bash
+#Ütleb vanusele vastavalt mis vanusegrupis oled
+echo -n "Sisesta (oma) vanus:"
+read vanus
+#Kui vanus on 0 ja 11 vahel
+if [ $vanus -gt 0 -a $vanus -lt 11 ]
+then
+echo "Oled laps."
+#Kui vanus on 11 ja 18 vahel
+elif [ $vanus -ge 11 -a $vanus -lt 18 ]
+then
+echo "Oled nooruk."
+#Kui vanus on 18 ja 63 vahel
+elif [ $vanus -ge 18 -a $vanus -lt 63 ]
+then
+echo "Oled täiskasvanu."
+#Kui vanus on üle 63
+elif [ $vanus -ge 63 ]
+then
+echo "Oled senjoor."
+#Kui ei sisestatud korrektset vanust
+else
+echo "Ei sisestanud vanust"
+fi
