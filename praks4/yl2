@@ -5,11 +5,16 @@ read reisijad
 echo -n "Mitu kohta on bussis:"
 read kohad_bussis
 
+#Arvutan mitu bussi tuleb täis
 bussid=$(($reisijad/$kohad_bussis))
-echo "Täielikult täidetud on $bussid bussi/buss."
+#echo "Täielikult täidetud on $bussid bussi/buss."
 
+#arvutan mitu inimest ei mahtunud bussi
 maha_jaanud=$(($reisijad % $kohad_bussis ))
 if [ $maha_jaanud -ne 0 ]
 then
-echo "Maha jääb $maha_jaanud inimest/inimene."
+bussid=$(($bussid + 1))
+echo "Kokku on vaja $bussid bussi."
+else
+echo "Kokku on vaja $bussid täisbussi."
 fi
