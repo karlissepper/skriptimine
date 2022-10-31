@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# EAP arvutused
+
+echo -n "Sisesta ainepunktide arv:"
+read ainearv
+echo -n "Sisesta nädalate arv:"
+read nadalad
+
+aeg=$(($ainearv*26))
+aeg_scale=`echo "scale=1;$aeg/$nadalad" | bc`
+aeg_ymarda=`echo "($aeg_scale+0.9)/1" | bc`
+echo $aeg_ymarda
